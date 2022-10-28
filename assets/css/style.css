@@ -44,3 +44,9 @@ header ul li a:hover{
 }
 
 /*Main content(posts)*/
+/*
+form_registration
+ */
+.form_registration a{
+    text-align: right;
+}

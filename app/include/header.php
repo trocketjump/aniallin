@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!--Header-->
+<header class="container-fluid">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -23,8 +24,6 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
 </script>
 <!--Botstap END-->
-<!--Header-->
-<header class="container-fluid">
     <div class="container">
         <div class="row">
             <div class="col-4">
@@ -40,11 +39,3 @@
     </div>
 </header>
 <!--Header END-->
-<form action="php/registration.php" method="post">
-    Name:<input type="text" name="username">
-    Day of birthday:<input type="date" name="birthday">
-    Email:<input type="email" name="email">
-    <button type="submit">OK</button>
-</form>
-</body>
-</html>
