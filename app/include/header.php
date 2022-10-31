@@ -31,7 +31,7 @@
             </div>
             <nav class="col-8">
                 <ul>
-                    <li><a href="">Blog</a></li>
+                    <li><a href="blog.php">Blog</a></li>
                     <li><a href="authorization.php"><i class="fa-solid fa-user"></i>Log In/Out</a></li>
                 </ul>
             </nav>

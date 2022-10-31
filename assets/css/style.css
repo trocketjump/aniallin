@@ -44,6 +44,10 @@ header ul li a:hover{
 }
 
 /*Main content(posts)*/
+.container{
+    padding: 30px 0px;
+}
+/*Main content(posts) END*/
 /*
 form_registration
  */
