@@ -5,14 +5,14 @@ include 'app/include/header.php';
 <!--authorization-->
 <div class="container form_registration">
     <div class="row">
-        <form method="post" action="">
+        <form method="post" action="php/login.php">
         <div class="mb-3 col-12 col-md-4">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <label for="InputLogin" class="form-label">Login</label>
+            <input type="text" class="form-control" id="InputLogin" name="username">
         </div>
         <div class="mb-3 col-12 col-md-4">
             <label for="InputPassword" class="form-label">Password</label>
-            <input type="password" class="form-control" id="InputPassword">
+            <input type="password" class="form-control" id="InputPassword" name="password">
         </div>
         <button type="submit" class="btn btn-primary">LogIn</button>
             <a href="registration.php">Registration</a>

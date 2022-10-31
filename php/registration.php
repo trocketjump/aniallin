@@ -1,16 +1,10 @@
 <?php
-$username = $_POST['username'];
-$birthday = $_POST['birthday'];
-$email = $_POST['email'];
-$dbname = "registrationdb";
+require __DIR__ . "/../" . 'app/database/connect.php';
 
-$servername = "localhost";
-$usernamedb = "root";
-$password = "";
+$data = [$_POST['username'], $_POST['password'], $_POST['birthday'], $_POST['email']];
 
-$connection = new PDO("mysql:host=localhost;dbname=registrationdb", $usernamedb, $password);
+$sql = "INSERT user (username,password, birthday, email) VALUE ('$data[0]', '$data[1]', 
+'$data[2]', '$data[3]')";
 
-
-$sql = "INSERT registration (username, birthday, email) VALUE ('$username', '$birthday', '$email')";
-
-$connection->exec($sql);
+$quary = $connection->prepare($sql); // PDO method
+$quary->execute();
