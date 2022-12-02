@@ -2,10 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e9fe232-57f5-4b6c-ab73-50b55668dfa9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database/select_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/select_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/create_table_post.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database/create_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/createdb/create_db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database/create_table_blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/createdb/create_table_blog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database/create_table_post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/createdb/create_table_post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database/create_table_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/createdb/create_table_user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/include/current_id.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/create_db_post.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/create_db_registration.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/create_table_registration.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/get_data_post.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/post_show.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/registration.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/single_post.php" beforeDir="false" afterPath="$PROJECT_DIR$/single_post.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,23 +48,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/xampp/htdocs/aniallin/app/database",
-    "list.type.of.created.stylesheet": "CSS",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/aniallin&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\aniallin\app\database" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\aniallin\app\database\Сreatedb" />
       <recent name="C:\xampp\htdocs\aniallin\assets" />
       <recent name="C:\xampp\htdocs\aniallin\php" />
     </key>
@@ -87,7 +101,16 @@
       <workItem from="1666960313919" duration="2827000" />
       <workItem from="1666975460338" duration="1117000" />
       <workItem from="1667214193005" duration="1145000" />
-      <workItem from="1667219788926" duration="15463000" />
+      <workItem from="1667219788926" duration="16711000" />
+      <workItem from="1667287449657" duration="2289000" />
+      <workItem from="1667301260615" duration="2600000" />
+      <workItem from="1667853010932" duration="54000" />
+      <workItem from="1668222633587" duration="1317000" />
+      <workItem from="1669029314707" duration="5817000" />
+      <workItem from="1669056898313" duration="3399000" />
+      <workItem from="1669111901626" duration="593000" />
+      <workItem from="1669134112298" duration="9450000" />
+      <workItem from="1670006682850" duration="292000" />
     </task>
     <servers />
   </component>

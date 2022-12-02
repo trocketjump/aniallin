@@ -30,8 +30,6 @@ $data = select_single_info("post", $_GET['id']);
         </div>
     </div>
 </div>
-
-?>
 <!--Main content(posts) END-->
 <?php
 include 'app/include/footer.php';
