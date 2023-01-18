@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <?php
+include 'app/database/functions_table.php';
 include 'app/include/header.php';
 include 'app/database/select_table.php';
 require 'app/database/connect.php';
+
+
+$page = $_GET['page'] ?? 1;
+$limit = 2;
+$offset = $limit * ($page - 1);
+$total_pages = round(countRow('post') / $limit, 0);
+
 ?>
 <!--Maint content(posts)-->
 <h1>Смотреть аниме</h1>

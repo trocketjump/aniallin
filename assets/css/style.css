@@ -59,3 +59,11 @@ forms
 form div.error{
     color: crimson;
 }
+
+
+
+/*player*/
+video{
+    width: 200px;
+    height: 100px;
+}

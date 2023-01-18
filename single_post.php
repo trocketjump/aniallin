@@ -26,12 +26,20 @@ $data = select_single_info("post", $_GET['id']);
                         <?php echo $data['post_description']; ?>
                     </p>
                 </div>
+                <div>
+                    <video controls>
+                        <source src="assets/video/test.mp4" type="video/mp4">
+                        <source src="assets/video/test.mp4" type="video/ogg">
+                        <iframe width="560" height="315" src="assets/video/test.mp4" allowfullscreen></iframe>
+                    </video>
+                </div>
             </div>
         </div>
     </div>
 </div>
 <!--Main content(posts) END-->
 <?php
-include 'app/include/footer.php';
+include_once 'app/include/comment.php';
+//include 'app/include/footer.php';
 ?>
 </html>

@@ -1,3 +1,4 @@
+
 <!--Header-->
 <header class="container-fluid">
 <html lang="en">
@@ -32,7 +33,11 @@
             <nav class="col-8">
                 <ul>
                     <li><a href="blog.php">Blog</a></li>
-                    <li><a href="authorization.php"><i class="fa-solid fa-user"></i>Log In/Out</a></li>
+                    <?php if (isset($_COOKIE['username'])): ?>
+                        <li><a href="php/user_profile.php"><i class="fa-solid fa-user"></i><?php echo $_COOKIE['username'] ?></a></li>
+                    <?php else: ?>
+                        <li><a href="authorization.php"><i class="fa-solid fa-user"></i>Log In/Reg</a></li>
+                    <?php endif; ?>
                 </ul>
             </nav>
         </div>

@@ -2,7 +2,7 @@
 require __DIR__ . '/connect.php';
 
 /*function for getting all data from a table*/
-function selectAll($table_name, $parameters = []){
+/*function selectAll($table_name, $parameters = []){
     global $connection;
     $sql = "SELECT * FROM $table_name";
 
@@ -27,7 +27,7 @@ function selectAll($table_name, $parameters = []){
     dbCheckError($quary);
 
     return $quary->fetchAll();
-}
+}*/
 /*check request into db*/
 function dbCheckError($quary){
     $errorInfo = $quary->errorInfo();
@@ -40,6 +40,3 @@ $parameters = [
     'username' => 'admin',
     'email' => 'admin@gmail.com'
 ];
-echo "<pre>";
-print_r(selectAll('user', $parameters));
-echo "</pre>";

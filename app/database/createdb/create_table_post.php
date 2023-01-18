@@ -1,5 +1,5 @@
 <?php
-require __DIR__ . '/connect.php';
+require __DIR__ . '/../connect.php';
 
 $sql = "CREATE TABLE post(
     ID int NOT NULL AUTO_INCREMENT,

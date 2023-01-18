@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
 include 'app/include/header.php';
+include 'app/database/functions_table.php';
 ?>
 <!--authorization-->
 <div class="container form_registration">

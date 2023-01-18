@@ -11,6 +11,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){ //вносит пользовател
 
     $quary = $connection->prepare($sql); // PDO method
     $quary->execute();
+    $_SESSION['username'] = $username;
+    $_SESSION['email'] = $email;
 }
 ?>
 <!doctype html>
