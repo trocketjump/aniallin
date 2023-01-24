@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <?php
 
 include __DIR__ . "/../" . 'app/database/select_table.php';
-include __DIR__ . "/../" . 'app/database/connect.php';
+//include __DIR__ . "/../" . 'app/database/connect.php';
 
 $login = $_POST['username'];
 $password = $_POST['password'];
@@ -10,34 +11,48 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     $data = select_all_info('user');
     $log = false;
     $pass = false;
+    $email = '';
     foreach ($data as $key => $value){
         if($value['username'] == $login && $value['password'] == $password){
             $log = true;
-            $email = $value['email'];
-        }else{
             $pass = true;
+            $email = $value['email'];
+            setcookie('email', $value['email'], time() + 3600 * 24, "/");
         }
     }
-    if($log && $pass){
-        $_SESSION['username'] = $login;
-        $_SESSION['email'] = $email;
+   if($log && $pass){
+        $_COOKIE['email'] = $email;
+       header("Location: ../index.php");
+        echo <<<_END
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport"
+                      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <title>Success</title>
+            </head>
+            <body>
+            </body>
+            </html>
+        _END;
     }else{
-        echo "wrong log or pass";
+        echo "wrong log or pass" . "<br>";
+        echo <<<_END
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport"
+                      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <title>Wrong</title>
+            </head>
+            <body>
+            <a href="../index.php">Go to main page</a>
+            </body>
+            </html>
+        _END;
     }
 }
 ?>
 
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Success</title>
-</head>
-<body>
-<p>Success</p>
-<a href="../index.php">Go to main page</a>
-</body>
-</html>

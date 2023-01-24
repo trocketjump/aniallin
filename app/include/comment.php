@@ -13,8 +13,11 @@ if(isset($_COOKIE["username"])) {
 </head>
 <body>
 <form method="post" action="#">
-    <input type="text" name="text">
-    <button type="submit">Ok</button>
+    <div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Leave your comment..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+  <span class="input-group-text" id="basic-addon2"></span>
+</div>
+    <button class="btn btn-primary" type="submit">Ok</button>
 </form>
 </body>
 </html>

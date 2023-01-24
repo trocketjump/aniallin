@@ -5,23 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e9fe232-57f5-4b6c-ab73-50b55668dfa9" name="Changes" comment="added function file for db">
-      <change afterPath="$PROJECT_DIR$/app/controllers/users.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/database/functions_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database/createdb/create_table_blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/createdb/create_table_blog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database/createdb/create_table_post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/createdb/create_table_post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database/createdb/create_table_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/createdb/create_table_user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database/get_table_full.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/get_table_full.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/database/insert_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/include/comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/include/comment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/include/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/include/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization.php" beforeDir="false" afterPath="$PROJECT_DIR$/authorization.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/registration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single_post.php" beforeDir="false" afterPath="$PROJECT_DIR$/single_post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/user_profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/user_profile.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +119,13 @@
       <workItem from="1673764722657" duration="6440000" />
       <workItem from="1673847521030" duration="10513000" />
       <workItem from="1673945619055" duration="618000" />
-      <workItem from="1674039456843" duration="1270000" />
+      <workItem from="1674039456843" duration="2103000" />
+      <workItem from="1674107084333" duration="2449000" />
+      <workItem from="1674123193285" duration="894000" />
+      <workItem from="1674137890641" duration="4121000" />
+      <workItem from="1674231828406" duration="1917000" />
+      <workItem from="1674486953289" duration="816000" />
+      <workItem from="1674589376626" duration="3801000" />
     </task>
     <task id="LOCAL-00001" summary="added function file for db">
       <created>1670007142099</created>
@@ -160,5 +154,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added function file for db" />
     <option name="LAST_COMMIT_MESSAGE" value="added function file for db" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/controllers/users.php</url>
+          <line>7</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

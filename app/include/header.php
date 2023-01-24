@@ -33,7 +33,7 @@
             <nav class="col-8">
                 <ul>
                     <li><a href="blog.php">Blog</a></li>
-                    <?php if (isset($_COOKIE['username'])): ?>
+                    <?php if (isset($_COOKIE['email'])): ?>
                         <li><a href="php/user_profile.php"><i class="fa-solid fa-user"></i><?php echo $_COOKIE['username'] ?></a></li>
                     <?php else: ?>
                         <li><a href="authorization.php"><i class="fa-solid fa-user"></i>Log In/Reg</a></li>
