@@ -1,6 +1,5 @@
 <?php
 include_once __DIR__ . "/../" . 'database/functions_table.php';
-include_once __DIR__ . "/../" . 'database/connect.php';
 /*Проверяет форму регистрации и формирует массив с данными пользователя*/
 $isSubmit = false;
 $errormsg = '';

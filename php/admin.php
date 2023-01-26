@@ -1,21 +1,22 @@
 <?php
 
-//require_once __DIR__ . '/../database/connect.php';
-require_once __DIR__ . '/../database/functions_table.php';
+require_once __DIR__ . '/../app/database/functions_table.php';
 
-$username = $_POST['username'];
-$password = $_POST['password'];
-setcookie('admin', $username, time() + 3600 * 24, "/");
-if (isset($_POST['username'])) {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
 
+//if (isset($_POST['username'])) {
+    $username = trim($_POST['username']);
+    $password = trim($_POST['password']);
+    echo $username . $password;
+    setcookie('admin', $username, time() + 3600 * 24, "/");
     $data = selectAll('admin', ['username' => $username, 'password' => $password]);
     foreach ($data as $key => $value) {
+        echo $value['username'] . $value['password'];
         if ($value['username'] === $username && $value['password'] === $password) {
-            echo 'welcome';
-        } else {
-
+            setcookie('pass', $password, time() + 3600 * 24, "/");
+            header('Location: admin_menu.php');
+            echo "a";
+        }else{
+            echo "wrong log or pass";
         }
     }
-}
+//}

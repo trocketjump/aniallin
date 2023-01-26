@@ -1,5 +1,3 @@
-<?php
-?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -10,7 +8,7 @@
     <title>Admin</title>
 </head>
 <body>
-<form method="post" action="app/controllers/admin.php">
+<form method="post" action="php/admin.php">
     <div class="mb-3 col-12 col-md-4">
         <label for="InputLogin" class="form-label">Login</label>
         <input type="text" class="form-control" id="InputLogin" name="username">

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <?php
-
 include __DIR__ . "/../" . 'app/database/select_table.php';
-//include __DIR__ . "/../" . 'app/database/connect.php';
 
 $login = $_POST['username'];
 $password = $_POST['password'];
+
 setcookie('username', $login, time() + 3600 * 24, "/");
+
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
     $data = select_all_info('user');
     $log = false;
@@ -54,5 +54,5 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         _END;
     }
 }
-?>
+
 
