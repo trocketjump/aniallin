@@ -4,19 +4,36 @@ include 'app/database/functions_table.php';
 include 'app/include/header.php';
 include 'app/database/select_table.php';
 require 'app/database/connect.php';
+require_once 'app/include/pagination.php';
+
+/*$page = $_GET['page'] ?? 1;
+$limit = 5;
+$total_pages = round(countRow('post') / $limit);
+if(!$page || $page < 1 || is_string($page)){
+    $page = 1;
+}
+if($page > $total_pages){
+    $page = $total_pages;
+}
+$offset = $limit * ($page - 1);*/
 
 
-$page = $_GET['page'] ?? 1;
-$limit = 2;
-$offset = $limit * ($page - 1);
-$total_pages = round(countRow('post') / $limit, 0);
+
 
 ?>
 <!--Maint content(posts)-->
 <h1>Смотреть аниме</h1>
 <?php
 $data = select_all_info("post");
-foreach ($data as $key=>$value){
+
+/*for($i = 1; $i <= $total_pages; $i++){
+    echo "<a href='?page=$i'>" . $i . " " . "</a>";
+}*/
+
+
+//$part_of_data = array_slice($data, $offset, $limit);
+$part_of_data = pagination($data, 'page', 5, 'post');
+foreach ($part_of_data as $key=>$value){
 ?>
 <div class="container">
     <div class="content row">

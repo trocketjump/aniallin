@@ -13,7 +13,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
     if($username === '' || $password === '' || $birthday === '' || $email === ''){
         $errormsg = "A field is empty";
-    }elseif(seachTable('user', $email)){
+    }elseif(searchTable('user', $email)){
         $errormsg = "$email is already exist";
     }elseif (mb_strlen($username, 'UTF-8') > 16 || mb_strlen($username, 'UTF-8') <= 2){
         $errormsg = "Name must be from 2 to 16 symbols";

@@ -6,10 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8e9fe232-57f5-4b6c-ab73-50b55668dfa9" name="Changes" comment="added function file for db">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin_auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_auth.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database/functions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/functions_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/include/comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/include/comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +126,9 @@
       <workItem from="1674231828406" duration="1917000" />
       <workItem from="1674486953289" duration="816000" />
       <workItem from="1674589376626" duration="5945000" />
-      <workItem from="1674764293009" duration="10484000" />
+      <workItem from="1674764293009" duration="11294000" />
+      <workItem from="1674913227204" duration="3581000" />
+      <workItem from="1674936052282" duration="9898000" />
     </task>
     <task id="LOCAL-00001" summary="added function file for db">
       <created>1670007142099</created>
@@ -155,5 +157,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added function file for db" />
     <option name="LAST_COMMIT_MESSAGE" value="added function file for db" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/include/comment.php</url>
+          <line>35</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

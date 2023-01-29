@@ -2,7 +2,7 @@
 require __DIR__ . '/connect.php';
 
 //no idea what is it
-function seachTable($table_name, $parameter) :bool { //Проверка наличия в таблице мейла
+function searchTable($table_name, $parameter) :bool { //Проверка наличия в таблице мейла
     global $connection;
     $sql = "SELECT email FROM $table_name";
 
