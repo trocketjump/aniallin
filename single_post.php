@@ -13,17 +13,17 @@ $data = select_single_info("post", $_GET['id']);
         <div class="main-content col-md-9">
             <div class="post row">
                 <div class="img col-12 col-md-4">
-                    <?php echo "<img src=\"" . $data['post_img'] . "\" class=\"post image\">"; ?>
+                    <?= "<img src=\"" . $data['post_img'] . "\" class=\"post image\" alt=\"" . $data['post_title'] . "\">"; ?>
                 </div>
                 <div class="post_text col-12 col-md-8">
-                    <h2>
-                        <?php echo $data['post_title']; ?>
-                    </h2>
+                    <h1>
+                        <?= $data['post_title']; ?>
+                    </h1>
                     <i>
-                        <?php echo $data['post_year']; ?>
+                        <?= $data['post_year']; ?>
                     </i>
                     <p class="preview-text">
-                        <?php echo $data['post_description']; ?>
+                        <?= $data['post_description']; ?>
                     </p>
                 </div>
                 <div>

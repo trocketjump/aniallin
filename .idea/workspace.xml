@@ -6,10 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="8e9fe232-57f5-4b6c-ab73-50b55668dfa9" name="Changes" comment="added function file for db">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/database/functions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/functions_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/include/comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/include/comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/include/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/include/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/user_profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/user_profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single_post.php" beforeDir="false" afterPath="$PROJECT_DIR$/single_post.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +50,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/cpritula/test&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/xampp/htdocs/aniallin&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -58,6 +63,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\aniallin" />
       <recent name="C:\xampp\htdocs\aniallin\app\database" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -128,7 +134,20 @@
       <workItem from="1674589376626" duration="5945000" />
       <workItem from="1674764293009" duration="11294000" />
       <workItem from="1674913227204" duration="3581000" />
-      <workItem from="1674936052282" duration="9898000" />
+      <workItem from="1674936052282" duration="11575000" />
+      <workItem from="1674998447301" duration="248000" />
+      <workItem from="1675029599374" duration="1812000" />
+      <workItem from="1675325516723" duration="523000" />
+      <workItem from="1675326683042" duration="27000" />
+      <workItem from="1675461590838" duration="326000" />
+      <workItem from="1675476090121" duration="1239000" />
+      <workItem from="1675648900919" duration="1015000" />
+      <workItem from="1675656159393" duration="158000" />
+      <workItem from="1675656401971" duration="182000" />
+      <workItem from="1675657282545" duration="4904000" />
+      <workItem from="1675668098180" duration="1596000" />
+      <workItem from="1675762873921" duration="2320000" />
+      <workItem from="1676286710681" duration="637000" />
     </task>
     <task id="LOCAL-00001" summary="added function file for db">
       <created>1670007142099</created>

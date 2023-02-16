@@ -15,7 +15,6 @@ function searchTable($table_name, $parameter) :bool { //Проверка нал�
         foreach ($value as $key1=>$value1){
             if($parameter === $value1){
                 return true;
-                die();
             }
         }
     }

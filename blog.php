@@ -16,17 +16,17 @@ foreach ($data as $key=>$value){
         <div class="main-content col-md-9">
             <div class="post row">
                 <div class="img col-12 col-md-4">
-                    <?php echo "<img src=\"" . $value['blog_img'] . "\" class=\"post image\">"; ?>
+                    <?= "<img src=\"" . $value['blog_img'] . "\" class=\"post image\">"; ?>
                 </div>
                 <div class="post_text col-12 col-md-8">
                     <a href=""><h2>
-                       <?php echo $value['blog_title']; ?>
+                       <?= $value['blog_title']; ?>
                     </h2></a>
                     <i>
-                        <?php echo $value['adding_date']; ?>
+                        <?= $value['adding_date']; ?>
                     </i>
                     <p class="preview-text">
-                        <?php echo $value['blog_text']; ?>
+                        <?= $value['blog_text']; ?>
                     </p>
                 </div>
             </div>

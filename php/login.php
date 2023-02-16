@@ -2,8 +2,8 @@
 <?php
 include __DIR__ . "/../" . 'app/database/select_table.php';
 
-$login = $_POST['username'];
-$password = $_POST['password'];
+$login = trim($_POST['username']);
+$password = trim($_POST['password']);
 
 setcookie('username', $login, time() + 3600 * 24, "/");
 
@@ -13,15 +13,14 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     $pass = false;
     $email = '';
     foreach ($data as $key => $value){
-        if($value['username'] == $login && $value['password'] == $password){
+        if($value['username'] == $login && password_verify($password, $value['password'])){
             $log = true;
             $pass = true;
             $email = $value['email'];
-            setcookie('email', $value['email'], time() + 3600 * 24, "/");
+            setcookie('email', $email, time() + 3600 * 24, "/");
         }
     }
    if($log && $pass){
-        $_COOKIE['email'] = $email;
        header("Location: ../index.php");
         echo <<<_END
             <html lang="en">
