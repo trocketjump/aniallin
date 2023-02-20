@@ -30,7 +30,7 @@ $data = select_single_info("post", $_GET['id']);
                     <video controls>
                         <source src="assets/video/test.mp4" type="video/mp4">
                         <source src="assets/video/test.mp4" type="video/ogg">
-                        <iframe width="560" height="315" src="assets/video/test.mp4" allowfullscreen></iframe>
+                        //<iframe width="560" height="315" src="assets/video/test.mp4" allowfullscreen></iframe>
                     </video>
                 </div>
             </div>

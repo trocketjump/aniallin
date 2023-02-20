@@ -12,7 +12,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     $log = false;
     $pass = false;
     $email = '';
+
     foreach ($data as $key => $value){
+    #var_dump($value); die;
         if($value['username'] == $login && password_verify($password, $value['password'])){
             $log = true;
             $pass = true;

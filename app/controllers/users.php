@@ -13,15 +13,20 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
     if($username === '' || $password === '' || $birthday === '' || $email === ''){
         $errormsg = "A field is empty";
+        var_dump(111);die;
     }elseif(searchTable('user', $email)){
         $errormsg = "$email is already exist";
+        var_dump(2);
     }elseif (mb_strlen($username, 'UTF-8') > 16 || mb_strlen($username, 'UTF-8') <= 2){
         $errormsg = "Name must be from 2 to 16 symbols";
+        var_dump(3);
 /*    }elseif (!preg_match('[a-zA-Z]', $username)){
         $errormsg = "Name must contain only symbols";*/
-    }elseif (mb_strlen($password, 'UTF-8') <= 4 || mb_strlen($password, 'UTF-8') >50){
+    }elseif (mb_strlen($password, 'UTF-8') < 4 || mb_strlen($password, 'UTF-8') >50){
+    var_dump(4);
         $errormsg = "Password must be from 4 to 50 symbols";
     }elseif ($password !== $repeat_password){
+    var_dump(5);
         $errormsg = "Passwords do not match";
     }else{
         $isSubmit = true;
@@ -34,6 +39,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         ];
     }
 }else{
+var_dump("pizdec");
     $username = '';
     $birthday = '';
     $email = '';
