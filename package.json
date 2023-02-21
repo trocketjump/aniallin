@@ -1,0 +1,14 @@
+{
+  "name": "testcafe-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe tests/src/tests/test.js -e"
+  },
+  "author": "ololo",
+  "license": "ISC",
+  "dependencies": {
+    "testcafe": "^1.18.6"
+  }
+}
