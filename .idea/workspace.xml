@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e9fe232-57f5-4b6c-ab73-50b55668dfa9" name="Changes" comment="added function file for db">
-      <change afterPath="$PROJECT_DIR$/.testcaferc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/src/tests/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/src/PageModels/RegistrationPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/src/tests/loginTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/src/tests/regitrationTest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/src/tests/test.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +147,7 @@
       <workItem from="1675668098180" duration="1596000" />
       <workItem from="1675762873921" duration="2320000" />
       <workItem from="1676286710681" duration="637000" />
-      <workItem from="1676936257453" duration="2643000" />
+      <workItem from="1676936257453" duration="9995000" />
     </task>
     <task id="LOCAL-00001" summary="added function file for db">
       <created>1670007142099</created>

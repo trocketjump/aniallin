@@ -13,17 +13,23 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
     if($username === '' || $password === '' || $birthday === '' || $email === ''){
         $errormsg = "A field is empty";
-    }elseif(searchTable('user', $email)){
+    }
+    elseif(searchTable('user', $email)){
         $errormsg = "$email is already exist";
-    }elseif (mb_strlen($username, 'UTF-8') > 16 || mb_strlen($username, 'UTF-8') <= 2){
+    }
+    elseif (mb_strlen($username, 'UTF-8') > 16 || mb_strlen($username, 'UTF-8') < 2){
         $errormsg = "Name must be from 2 to 16 symbols";
 /*    }elseif (!preg_match('[a-zA-Z]', $username)){
         $errormsg = "Name must contain only symbols";*/
-    }elseif (mb_strlen($password, 'UTF-8') <= 4 || mb_strlen($password, 'UTF-8') >50){
+    }
+    elseif (mb_strlen($password, 'UTF-8') < 4 || mb_strlen($password, 'UTF-8') > 50){
         $errormsg = "Password must be from 4 to 50 symbols";
-    }elseif ($password !== $repeat_password){
+    }
+    elseif ($password !== $repeat_password){
         $errormsg = "Passwords do not match";
-    }else{
+    }
+    else{
+        //var_dump("12515555555555555555555555555555555555555555555555555555555555555555555346743\/n2362233333333333333333333333333333333623");die();
         $isSubmit = true;
         $hash_password = password_hash($password, PASSWORD_DEFAULT);
         $user_data = [
@@ -33,7 +39,8 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
             'email'    => $email
         ];
     }
-}else{
+}
+else{
     $username = '';
     $birthday = '';
     $email = '';
