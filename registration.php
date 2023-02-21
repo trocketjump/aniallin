@@ -1,14 +1,15 @@
 <?php
-include 'app/include/header.php';
-include_once 'app/controllers/users.php';
+    include 'app/include/header.php';
+    include_once 'app/controllers/users.php';
 
-$action_value = '';
-if($isSubmit == true){
-    $action_value = 'php/registration.php';
-}else{
-    $action_value = 'registration.php';
-}
-echo $isSubmit;
+
+    $action_value = '';
+    if($isSubmit){
+        $action_value = 'php/registration.php';
+    }
+    else{
+        $action_value = 'registration.php';
+    }
 ?>
 
 <!--registration form-->
@@ -38,7 +39,7 @@ echo $isSubmit;
                 <label for="RepeatPassword" class="form-label">Repeat password:</label>
                 <input type="password" name="repeat-password" id="RepeatPassword" class="form-control">
             </div>
-            <button type="submit" class="btn btn-primary" name="btn-registr">OK</button>
+            <button type="submit" class="btn btn-primary">OK</button>
         </form>
     </div>
 </div>

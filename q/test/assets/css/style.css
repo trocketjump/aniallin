@@ -1,0 +1,10 @@
+img{
+    height: 400px;
+    width: 500px;
+}
+ .color-circle{
+     height: 50px;
+     width: 50px;
+     border: 1px solid #ccc;
+     border-radius: 50%;
+ }
