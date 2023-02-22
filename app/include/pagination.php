@@ -20,7 +20,7 @@ function pagination($data, $get_parameter, $limit, $database): array{
     if(str_contains($url, '?')) {
         if(str_contains($url, '&')){
             $url = strstr($url, '&', true);
-            for($i = 1; $i <= $total_pages; $i++){
+            for($i = 1; $i <= $total_pages; $i++) {
                 echo "<a href='$url&$get_parameter=$i'>$i</a>";
             }
         } else {
@@ -30,9 +30,9 @@ function pagination($data, $get_parameter, $limit, $database): array{
                     echo "<a href='$url?$get_parameter=$i'>$i</a>";
                 }
             } else {
-            for ($i = 1; $i <= $total_pages; $i++) {
-                echo "<a href='$url&$get_parameter=$i'>$i</a>";
-            }
+                for ($i = 1; $i <= $total_pages; $i++) {
+                    echo "<a href='$url&$get_parameter=$i'>$i</a>";
+                }
             }
         }
     }else{

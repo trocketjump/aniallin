@@ -3,6 +3,3 @@
 *.png
 *.webm
 test.php
-app/database/createdb
-node_modules
-.idea

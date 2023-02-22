@@ -12,7 +12,7 @@
 </head>
 <body>
 <div>
-<a href="../../php/admin_menu.php">Back</a>
+<a href="admin_menu.php">Back</a>
 </div>
 <form method="post" action="add.php">
     <div>

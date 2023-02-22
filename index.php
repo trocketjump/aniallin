@@ -2,15 +2,13 @@
 <?php
 include 'app/database/functions_table.php';
 include 'app/include/header.php';
-include 'app/database/select_table.php';
 require 'app/database/connect.php';
 require_once 'app/include/pagination.php';
 
-$data = select_all_info("post");
+$data = selectAll("post");
 $part_of_data = pagination($data, 'page', 5, 'post');
 
-foreach ($part_of_data as $key=>$value){
-?>
+foreach ($part_of_data as $key=>$value): ?>
 <!--Maint content(posts)-->
 <div class="container">
     <div class="content row">
@@ -39,7 +37,7 @@ foreach ($part_of_data as $key=>$value){
     <br>
     <br>
 <?php
-}
+endforeach;
 ?>
 <!--Main content(posts) END-->
 

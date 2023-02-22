@@ -1,6 +1,6 @@
 <?php
     include 'app/include/header.php';
-    include_once 'app/controllers/users.php';
+    include_once 'app/controllers/user.php';
 ?>
 
 <!--registration form-->

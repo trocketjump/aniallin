@@ -13,7 +13,7 @@ $data = selectAll('post');
     <title>Users</title>
 </head>
 <body>
-<a href="../../php/admin_menu.php">Back</a>
+<a href="admin_menu.php">Back</a>
 <table>
     <tr>
         <th>title</th>

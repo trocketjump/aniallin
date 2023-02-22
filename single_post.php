@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <?php
 include 'app/include/header.php';
-include 'app/database/select_table.php';
+include 'app/database/functions_table.php';
 require 'app/database/connect.php';
+
+$data = selectInfoById("post", $_GET['id']);
 ?>
 <!--Maint content(single post)-->
-<?php
-$data = select_single_info("post", $_GET['id']);
-?>
 <div class="container">
     <div class="content row">
         <div class="main-content col-md-9">
@@ -30,7 +29,6 @@ $data = select_single_info("post", $_GET['id']);
                     <video controls>
                         <source src="assets/video/test.mp4" type="video/mp4">
                         <source src="assets/video/test.mp4" type="video/ogg">
-                        <iframe width="560" height="315" src="assets/video/test.mp4" allowfullscreen></iframe>
                     </video>
                 </div>
             </div>
@@ -40,6 +38,5 @@ $data = select_single_info("post", $_GET['id']);
 <!--Main content(posts) END-->
 <?php
 include_once 'app/include/comment.php';
-//include 'app/include/footer.php';
 ?>
 </html>

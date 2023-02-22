@@ -1,3 +1,7 @@
+<?php
+include_once 'app/controllers/admin.php';
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,7 +12,7 @@
     <title>Admin</title>
 </head>
 <body>
-<form method="post" action="php/admin.php">
+<form method="post" action="admin_auth.php">
     <div class="mb-3 col-12 col-md-4">
         <label for="InputLogin" class="form-label">Login</label>
         <input type="text" class="form-control" id="InputLogin" name="username">

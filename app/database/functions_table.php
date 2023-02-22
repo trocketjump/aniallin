@@ -83,6 +83,22 @@ function selectAll($table_name, $parameters = []) :array {
     return $quary->fetchAll();
 }
 
+function selectInfoById($tableName, $id) :array{
+    global $connection;
+
+    $sql = "SELECT * FROM $tableName WHERE ID = $id";
+    $query = $connection->prepare($sql);
+    $query->execute();
+
+    $errorInfo = $query->errorInfo();
+    if($errorInfo[0] != PDO::ERR_NONE){
+        echo $errorInfo[2];
+        exit();
+    }
+
+    return $query->fetch();
+}
+
 function countRow($table_name) :int {
     global $connection;
     $sql = "SELECT COUNT(*) FROM $table_name";

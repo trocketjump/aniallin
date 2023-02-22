@@ -10,9 +10,9 @@
 <body>
 <div>
     <ul>
-        <li><a href="../app/adminpanel/add.php">Add anime title</a></li>
-        <li><a href="../app/adminpanel/users.php">Users</a></li>
-        <li><a href="../app/adminpanel/posts.php">Posts</a></li>
+        <li><a href="add.php">Add anime title</a></li>
+        <li><a href="users.php">Users</a></li>
+        <li><a href="posts.php">Posts</a></li>
     </ul>
 </div>
 </body>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e9f47f20-5e23-40e3-87e5-c0b803305c1e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/admin_auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin_auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/adminpanel/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/adminpanel/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/adminpanel/posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/adminpanel/posts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/adminpanel/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/adminpanel/users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database/createdb/create_table_post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/createdb/create_table_post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database/functions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/functions_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database/get_table_full.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database/select_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/include/pagination.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/include/pagination.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authorization.php" beforeDir="false" afterPath="$PROJECT_DIR$/authorization.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/admin_menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/adminpanel/admin_menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/login.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single_post.php" beforeDir="false" afterPath="$PROJECT_DIR$/single_post.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2M493hh4l7wYxfUsEEDa7DCjduC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/xampp/htdocs/aniallin",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\aniallin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\aniallin\app\adminpanel" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e9f47f20-5e23-40e3-87e5-c0b803305c1e" name="Changes" comment="" />
+      <created>1677015790233</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677015790233</updated>
+      <workItem from="1677015795016" duration="15986000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
