@@ -1,8 +1,9 @@
 <?php
-include '../app/database/functions_table.php';
-echo "Hello " . $_COOKIE['username'];
+require_once('config.php');
 
+echo "Hello " . $_COOKIE['username'];
 ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -12,13 +13,15 @@ echo "Hello " . $_COOKIE['username'];
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?= $_COOKIE['username']; ?></title>
 </head>
-<form method="post" action="logout.php">
+<form method="post" action="#">
 <button type="submit" name="log-out">LogOut</button>
 </form>
 </body>
 </html>
 <?php
 if(isset($_POST['log-out'])){
-$_COOKIE = array();
+    setcookie('email', '', time() - 3600 * 24 * 9999, "/");
+    setcookie('username', '', time() - 3600 * 24 * 9999, "/");
+    header("Location:" . BASE_URL);
 }
 ?>

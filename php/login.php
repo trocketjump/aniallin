@@ -8,6 +8,11 @@ $password = trim($_POST['password']);
 setcookie('username', $login, time() + 3600 * 24, "/");
 
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
+    $login = trim($_POST['username']);
+    $password = trim($_POST['password']);
+
+    setcookie('username', $login, time() + 3600 * 24, "/");
+
     $data = select_all_info('user');
     $log = false;
     $pass = false;

@@ -1,10 +1,10 @@
 <?php
 include_once __DIR__ . "/../" . 'database/functions_table.php';
-/*Проверяет форму регистрации и формирует массив с данными пользователя*/
-$isSubmit = false;
+
 $errormsg = '';
 
-if($_SERVER['REQUEST_METHOD'] === 'POST'){
+/*Проверяет форму регистрации и формирует массив с данными пользователя*/
+if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['registration-button'])){
     $username = trim($_POST['username']);
     $birthday = trim($_POST['birthday']);
     $email = trim($_POST['email']);
@@ -19,8 +19,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     }
     elseif (mb_strlen($username, 'UTF-8') > 16 || mb_strlen($username, 'UTF-8') < 2){
         $errormsg = "Name must be from 2 to 16 symbols";
-/*    }elseif (!preg_match('[a-zA-Z]', $username)){
-        $errormsg = "Name must contain only symbols";*/
     }
     elseif (mb_strlen($password, 'UTF-8') < 4 || mb_strlen($password, 'UTF-8') > 50){
         $errormsg = "Password must be from 4 to 50 symbols";
@@ -29,8 +27,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         $errormsg = "Passwords do not match";
     }
     else{
-        //var_dump("12515555555555555555555555555555555555555555555555555555555555555555555346743\/n2362233333333333333333333333333333333623");die();
-        $isSubmit = true;
         $hash_password = password_hash($password, PASSWORD_DEFAULT);
         $user_data = [
             'username' => $username,
@@ -38,10 +34,40 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
             'birthday' => $birthday,
             'email'    => $email
         ];
+        insert('user', ['username', 'password', 'birthday', 'email'], $user_data );
+        userAuth($user_data);
     }
 }
 else{
     $username = '';
     $birthday = '';
     $email = '';
+}
+
+/*Check for authorization*/
+if($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['authorization-button'])){
+    $login = trim($_POST['username']);
+    $password = trim($_POST['password']);
+
+    $data = selectAll('user');
+    foreach ($data as $key => $value){
+        if($value['username'] == $login && password_verify($password, $value['password'])){
+            $user = [
+              'username' => $value['username'],
+              'email' => $value['email']
+            ];
+            userAuth($user);
+        }else{
+            $errormsg="Wrong login or password";
+        }
+    }
+}
+
+
+
+/*user functions*/
+function userAuth($user){
+    setcookie('username', $user['username'], time() + 3600 * 24, "/");
+    setcookie('email', $user['email'], time() + 3600 * 24, "/");
+    header('location: http://localhost/aniallin/user_profile.php');
 }

@@ -32,13 +32,13 @@
     <div class="container">
         <div class="row">
             <div class="col-4">
-                <a href="index.php"><img src="assets/img/logo.jpg" alt="logo"/></a>
+                <a href="index.php"><img src="assets/img/logo.png" alt="logo" class="logo"/></a>
             </div>
             <nav class="col-8">
                 <ul>
                     <li><a href="blog.php">Blog</a></li>
                     <?php if (isset($_COOKIE['email'])): ?>
-                        <li><a href="php/user_profile.php"><i class="fa-solid fa-user"></i><?php echo $_COOKIE['username'] ?></a></li>
+                        <li><a href="user_profile.php"><i class="fa-solid fa-user"></i><?php echo $_COOKIE['username'] ?></a></li>
                     <?php else: ?>
                         <li><a href="authorization.php"><i class="fa-solid fa-user"></i>Log In/Reg</a></li>
                     <?php endif; ?>

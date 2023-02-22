@@ -1,21 +1,12 @@
 <?php
     include 'app/include/header.php';
     include_once 'app/controllers/users.php';
-
-
-    $action_value = '';
-    if($isSubmit){
-        $action_value = 'php/registration.php';
-    }
-    else{
-        $action_value = 'registration.php';
-    }
 ?>
 
 <!--registration form-->
 <div class="container form_registration">
     <div class="row">
-        <form action="<?= $action_value; ?>" method="post">
+        <form action="registration.php" method="post">
             <div class="mb-3 col-12 col-md-4 error">
                 <p><?= $errormsg ?></p>
             </div>
@@ -39,11 +30,8 @@
                 <label for="RepeatPassword" class="form-label">Repeat password:</label>
                 <input type="password" name="repeat-password" id="RepeatPassword" class="form-control">
             </div>
-            <button type="submit" class="btn btn-primary">OK</button>
+            <button type="submit" class="btn btn-primary" name="registration-button">OK</button>
         </form>
     </div>
 </div>
 <!--registration formEND-->
-
-</body>
-</html>

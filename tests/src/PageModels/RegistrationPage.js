@@ -11,13 +11,13 @@ class RegistrationPage{
         this.button = Selector("[type='submit']");
     }
     generateTestLogin = () => {
-        let login = 'tst';
+        let login = 'test';
         const date = new Date().getTime();
-        return login + date;
+        return (login + date).substring(0, 16);
     };
 
     generateTestEmail = () => {
-        let email = 'tst';
+        let email = 'test';
         const date = new Date().getTime();
         return email + date + "@test.ua";
     }

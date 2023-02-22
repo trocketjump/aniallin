@@ -16,6 +16,11 @@ header{
     height: 70px;
 }
 
+.logo{
+    height: 85%;
+    width: 20%;
+}
+
 header*{
     color: #ffffff;
 }/*not work*/
@@ -51,6 +56,10 @@ form_registration
  */
 .form_registration a{
     text-align: right;
+}
+.container.form_registration{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*
